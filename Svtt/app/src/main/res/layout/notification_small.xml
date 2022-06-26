@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_music_notification"
+        android:layout_width="@dimen/dimen_btn_notification_small"
+        android:layout_height="@dimen/dimen_btn_notification_small"
+        android:scaleType="center" />
+
+    <LinearLayout
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10">
+        <ImageView
+            style="@style/BtnNotificationSmall"
+            android:id="@+id/icon_previous_notification"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:src="@drawable/ic_pre"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:contentDescription="@string/play_next"/>
+
+        <ImageView
+            style="@style/BtnNotificationSmall"
+            android:id="@+id/icon_play__notification_small"
+            android:contentDescription="@string/pause" />
+
+        <ImageView
+            android:id="@+id/icon_next_notification"
+            style="@style/BtnNotificationSmall"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:src="@drawable/ic_next"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:contentDescription="@string/previous"/>
+    </LinearLayout>
+</RelativeLayout>

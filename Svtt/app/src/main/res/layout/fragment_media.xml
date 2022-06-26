@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/light_color">
+
+    <FrameLayout
+        android:id="@+id/library"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_65"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image_music"
+        app:layout_constraintTop_toBottomOf="@+id/music_detail" />
+
+    <ImageView
+        android:id="@+id/image_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/legends"
+        app:layout_constraintBottom_toTopOf="@id/linear_player_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music_detail" />
+
+    <RelativeLayout
+        android:id="@+id/music_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_player_layout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/item_music"
+            layout="@layout/playlist_items" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            android:id="@+id/player_layout"
+            layout="@layout/player_layout" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

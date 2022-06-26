@@ -1,0 +1,47 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryDark">#9A2A07</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActionBar"
+        parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">#FF5722</item>
+        <item name="background">@color/colorAccent</item>
+    </style>
+
+    <style name="ImageButtonPlayer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">#E2E1E1E1</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">27sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewNotificationBig">
+        <item name="android:layout_width">@dimen/dimen_300</item>
+        <item name="android:layout_height">@dimen/dimen_btn_notification_big</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="TextViewPlayListItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="BtnNotificationSmall">
+        <item name="android:layout_width">@dimen/dimen_btn_notification_small</item>
+        <item name="android:layout_height">@dimen/dimen_btn_notification_small</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+</resources>

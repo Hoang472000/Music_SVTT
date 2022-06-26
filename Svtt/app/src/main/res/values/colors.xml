@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#FF9800</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="text_color">#F8615C5C</color>
+    <color name="color_black">#000000</color>
+    <color name="drawer_color">#335763</color>
+    <color name="light_color">#fafafa</color>
+    <color name="off_color">#dfdada</color>
+    <color name="gray_color">#9c9b9b</color>
+    <color name="background">#DAD2D2</color>
+    <color name="background_player_sheet_all">#DAD2D2</color>
+    <color name="background_seekbar">#ED6438</color>
+    <color name="background_player_layout">#E2E1E1E1</color>
+    <color name="color_text_splash_screen">#03A9F4</color>
+    <color name="toolbar">#FF5722</color>
+
+</resources>

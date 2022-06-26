@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_10">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dimen_5"
+        android:id="@+id/relative"
+        android:layout_width="@dimen/dimen_width"
+        android:layout_height="@dimen/dimen_height">
+        <ImageView
+            android:id="@+id/iv_music_list"
+            android:layout_width="@dimen/dimen_width"
+            android:layout_height="@dimen/dimen_height"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/dimen_5"
+            android:visibility="gone"
+            android:src="@drawable/ic_music_player" />
+
+        <es.claucookie.miniequalizerlibrary.EqualizerView
+            android:id="@+id/equalizer_view"
+            android:padding="@dimen/dimen_5"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_width"
+            android:layout_height="@dimen/dimen_height"/>
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="@dimen/dimen_width"
+            android:layout_height="@dimen/dimen_height"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5"
+            android:text="@string/_1"
+            android:textColor="@color/color_black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_music_name_media"
+        style="@style/TextViewPlayListItem"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:layout_toStartOf="@+id/queue_music"
+        android:layout_toLeftOf="@+id/queue_music"
+        android:layout_toEndOf="@id/relative"
+        android:layout_toRightOf="@id/relative"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/title"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_title" />
+
+    <TextView
+        android:id="@+id/tv_music_subtitle"
+        style="@style/TextViewPlayListItem"
+        android:layout_below="@id/tv_music_name_media"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_80"
+        android:layout_toStartOf="@+id/more_vert"
+        android:layout_toLeftOf="@+id/more_vert"
+        android:layout_toEndOf="@id/relative"
+        android:layout_toRightOf="@id/relative"
+        android:singleLine="true"
+        android:text="@string/subtitle"
+        android:textColor="@color/gray_color"
+        android:textSize="@dimen/size_subtitle"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/more_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_more_vert" />
+
+    <ImageView
+        android:id="@+id/queue_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_11"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_toStartOf="@id/more_vert"
+        android:layout_toLeftOf="@id/more_vert"
+        android:padding="@dimen/dimen_5"
+        android:src="@drawable/ic_queue_music" />
+</RelativeLayout>
